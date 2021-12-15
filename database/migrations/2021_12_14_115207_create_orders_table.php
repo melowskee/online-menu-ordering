@@ -25,7 +25,7 @@ class CreateOrdersTable extends Migration
             $table->string('province')->nullable();
             $table->string('postalcode')->nullable();
             $table->string('phone')->nullable();
-            $table->integer('discount')->default(0);
+            $table->string('discount')->nullable();
             $table->string('discount_code')->nullable();
             $table->integer('subtotal');
             $table->integer('tax');
